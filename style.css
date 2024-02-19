@@ -19,24 +19,18 @@ nav {
     padding: 5px 100px;
     display: flex;
     box-sizing: border-box;
-    background-color: #dfedee;
+    background-color: white;
     box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.164);
     z-index: 900;
     transition: 0.5s;
     align-items: center;
 }
 nav img{
-    height: 60px;
+    height: 80px;
     float: left;
-    margin: 0px 5px;
+    /* margin: 0px 5px; */
     padding: 0;
     /* border: 3px solid red; */
-}
-nav .logo {
-    float: left;
-    color: black;
-    padding: 0;
-    font-size: 200%;
 }
 nav ul{
     margin-left: auto !important;
@@ -47,16 +41,19 @@ nav ul{
 }
 .links{
     line-height: 60px;
-    color: #1d2f39;
-    font-size: 120%;
+    color: black;
+    font-size: 140%;
     padding: 5px 20px;
     text-decoration: none;
     font-weight: 700;
 }
+.links:hover{
+    color: #fb7218;
+}
 #home{
     background-size: cover;
     background-position: center center;
-    background-color: #dfedee;
+    background-color: #f5e3b8;
     padding-top: 100px;
     display: flex;
     height: 100vh;
@@ -77,7 +74,7 @@ nav ul{
 }
 #left a{
     text-decoration: none;
-    color: white;            
+    color: black;            
     font-size: 170%;
 }
 #left button{
@@ -87,16 +84,13 @@ nav ul{
         transition: ease-out 0.4s;
         font-family: 'Montserrat', sans-serif;
         outline: none !important;
-        border: 2px solid #1d2f39;
-        background-color: #1d2f39;
+        border: 2px solid #fb7218;
+        background-color: #fb7218;
         cursor: pointer;
         padding: 8px 8px !important;
 }
 #left button:hover{
-    box-shadow: inset 0 50px 0 0 #dfedee;
-}
-#left button:hover a{
-    color: black;
+    box-shadow: inset 0 50px 0 0 #fbbd4a;
 }
 @media screen and (max-width: 950px){
     #home h1{
