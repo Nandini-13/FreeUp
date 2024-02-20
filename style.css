@@ -90,7 +90,7 @@ nav ul{
         padding: 8px 8px !important;
 }
 #left button:hover{
-    box-shadow: inset 0 50px 0 0 #fbbd4a;
+    box-shadow: inset 0 50px 0 0 #f5e3b8;
 }
 @media screen and (max-width: 950px){
     #home h1{
