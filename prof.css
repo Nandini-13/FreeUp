@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5e3b8
+    ;
+}
+#pagearea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#card{
+    background-color: white;
+    width: 80vw;
+    height: 85vh;
+    display: flex;
+    box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.164);
+    border-radius: 15px;
+    
+}
+#card img{
+    height: 40vh;
+}
+#col{
+    width: 40%;
+    height: 100%;
+    padding: 5vh 2vw;
+    background: linear-gradient(90deg, rgb(170, 75, 11) 0%, rgba(251,114,24,1) 27%, rgba(213,46,13,1) 100%);
+    border-radius: 15px 0 0 15px;  
+}
+#band{
+    width: 60%;
+    height: 100%;
+    padding: 5vh 2vw;    
+}
+#band h1{
+    border-bottom: 1px solid #3a15005e;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.data{
+    margin: 1vh 3vw;
+}
+.data p{
+    color: rgb(68, 68, 68);
+}
+.fa {
+    font-size: larger;
+}
