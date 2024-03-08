@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+#jobs {
+    background-size: cover;
+    background-position: center center;
+    background-color: #ccebff;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+        'get get get get'
+        'filter post post post'
+        'filter post post post'
+        'filter post post post';
+    padding: 100px 2vw;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+#get {
+    grid-area: get;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 2% 3% 3%;
+}
+
+#filter {
+    grid-area: filter;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 2% 5%;
+}
+
+#post {
+    grid-area: post;
+    background-color: white;
+    height: 80vh;
+}
+#row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fb7218;
+    border-radius: 5px;
+    background-color: #fb7218;
+}
+
+.button,
+.fa-plus,
+.button__text {
+    transition: all 0.3s;
+}
+
+.button__text {
+    transform: translateX(20px);
+    color: #fff;
+    font-weight: 600;
+}
+.button:hover .fa-plus {
+    color: black;
+}
+.button:hover .button__text {
+    color: black;
+}
+.fa-plus{
+    transform: translateX(35px);
+    color: white;
+}
+.container-input {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    padding: 20px 0px 20px 40px;
+    border-radius: 10px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 1;
+}
+
+.container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+.filterinp{
+    width: 100%;
+    padding: 20px 0px 20px 40px;
+    border-radius: 10px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 1;
+}
+.filterinp svg{
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translate(0, -50%);
+}
