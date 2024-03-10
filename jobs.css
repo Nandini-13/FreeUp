@@ -8,10 +8,10 @@
     display: grid;
     grid-gap: 2em;
     grid-template-areas:
-        'get get get get'
-        'filter post post post'
-        'filter post post post'
-        'filter post post post';
+        'get get get'
+        'filter post post'
+        'filter post post'
+        'filter post post';
     padding: 100px 2vw;
     /* height: 100vh; */
     width: 100%;
@@ -36,7 +36,10 @@
 #post {
     grid-area: post;
     background-color: white;
-    height: 80vh;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4%;
 }
 #row{
     display: flex;
@@ -110,4 +113,14 @@
     top: 50%;
     left: 45px;
     transform: translate(0, -50%);
+}
+.indvpost{
+    background-color: #f5e3b8;
+    padding: 2% 4%;
+    margin: 2% 0;
+}
+.postcont{
+    background-color: white;
+    height: 100%;
+    padding: 1% 4%;
 }
